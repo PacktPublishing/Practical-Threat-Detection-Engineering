@@ -37,18 +37,3 @@ sysctl -w vm.max_map_count=262144
 
 5. run docker-compose up -d 
 
-#### configure fleet (optional)
-1. Log into kibana, go to management -> fleet 
-2. for the server host, enter https://[IP of current machine]:8220
-3. wait for the server policy to get generated. 
-4. click "Windows" for step 2, and copy the generated PS code block. You will need to make a couple edits, specifically
-  - change the --fleet-server-es url. Replace 'http' with 'https'. Additionally, if it uses the server name 'localhost' replace that with the IP address of the local machine.
-  -  add the argument --fleet-server-es-insecure
-5. Once the installation completes, you will see a fleet server in "Agents" tab under "Fleet"
-
-
-#### configure fleet outputs 
-1. Log into kibana, go to fleet settings 
-2. under "outputs" ensure "https://[ip address]:9200" is listed
-
-#### install additional agents
