@@ -7,7 +7,7 @@ updated_date = "2023/01/30"
 author = ["Jason Deyalsingh"]
 description = """
 This detection identifies an ISO mounted from a zip existing in a temp directory, which is a procedure used by Qakbot
-after performing a MOTW bypass. Mark of the web tags exist on Windows operating systems, to inform the user and system
+to perform MOTW bypass. Mark of the web tags exist on Windows operating systems, to inform the user and system
 when certain files were downloaded from the internet. This tag attempts to block or otherwise subvert certain
 potentially unsafe actions from being performed. Mark of the web bypass techniques attempt to deliver files to the end
 user without this tag set, allowing potentially unsafe actions to be taken.
