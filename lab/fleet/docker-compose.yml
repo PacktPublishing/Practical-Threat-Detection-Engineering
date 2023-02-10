@@ -1,0 +1,20 @@
+version: "3.6"
+services:
+  fleet-server:
+    image: docker.elastic.co/beats/elastic-agent:8.4.3
+    container_name: fleet-server
+    restart: always
+    volumes:
+      - ../certs:/certs
+    ports: [8220:8220]
+    user: root
+    environment:
+      - FLEET_SERVER_ENABLE=true
+      - FLEET_SERVER_POLICY_NAME=fleet-server-policy
+      - FLEET_SERVER_ELASTICSEARCH_HOST=https://es01:9200
+      - FLEET_SERVER_SERVICE_TOKEN=${FLEET_SERVER_SERVICE_TOKEN}
+      - FLEET_SERVER_ELASTICSEARCH_CA=/certs/ca/ca.crt
+      - FLEET_INSECURE=true
+networks:
+  default:
+    name: elastic-stack-network
