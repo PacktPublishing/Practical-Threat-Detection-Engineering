@@ -1,9 +1,9 @@
 version: "3.8"
 services:
   webapp:
-build:
-  	context: ./diwa
-ports:
-  	- 80:80
-volumes:
-  	- /var/log/apache2:/var/log/apache2
+    build:
+        context: ./diwa
+    ports:
+        - 80:80
+    volumes:
+        - /var/log/apache2:/var/log/apache2
