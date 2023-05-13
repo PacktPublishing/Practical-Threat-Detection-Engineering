@@ -1,0 +1,24 @@
+<Sysmon schemaversion="4.82">
+  <EventFiltering>
+  <RuleGroup name="Service modifications" groupRelation="and">
+    <RegistryEvent onmatch="include">
+        <TargetObject condition="contains">HKLM\SYSTEM\CurrentControlSet\Services</TargetObject>
+    </RegistryEvent>
+    <RegistryEvent onmatch="include">
+        <TargetObject condition="end with">\ImagePath</TargetObject>
+    </RegistryEvent>
+  </RuleGroup>
+ 
+ <RuleGroup name="Named Pipes" groupRelation="and">
+      <PipeEvent onmatch="include">
+        <PipeName condition="contains any">\</PipeName>
+      </PipeEvent>      
+      <PipeEvent onmatch="exclude">
+        <PipeName condition="contains any">msedgeview</PipeName>
+        <PipeName condition="is">\wkssvc</PipeName>
+        <PipeName condition="is">\srvsvc</PipeName>
+        <PipeName condition="is">\lsass</PipeName>
+      </PipeEvent>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>
