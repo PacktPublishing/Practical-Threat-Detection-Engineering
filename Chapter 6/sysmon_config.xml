@@ -7,6 +7,10 @@
     <RegistryEvent onmatch="include">
         <TargetObject condition="end with">\ImagePath</TargetObject>
     </RegistryEvent>
+    <RegistryEvent onmatch="exclude">
+        <TargetObject condition="end with">\Tcpip\Parameters</TargetObject>
+        <TargetObject condition="end with">\ClipSVC\Parameters</TargetObject>
+    </RegistryEvent>
   </RuleGroup>
  
  <RuleGroup name="Named Pipes" groupRelation="and">
