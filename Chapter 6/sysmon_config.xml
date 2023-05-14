@@ -8,8 +8,7 @@
         <TargetObject condition="end with">\ImagePath</TargetObject>
     </RegistryEvent>
     <RegistryEvent onmatch="exclude">
-        <TargetObject condition="end with">\Tcpip\Parameters</TargetObject>
-        <TargetObject condition="end with">\ClipSVC\Parameters</TargetObject>
+        <TargetObject condition="excludes">\ImagePath</TargetObject>
     </RegistryEvent>
   </RuleGroup>
  
