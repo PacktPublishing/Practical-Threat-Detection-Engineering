@@ -1,2 +1,2 @@
-# Practical Detection Engineering
-Practical Detection Engineering, published by Packt.
+# Practical Threat Detection Engineering
+Practical Threat Detection Engineering, published by Packt.
