@@ -1,6 +1,6 @@
 # Practical Threat Detection Engineering
 
-<a href="https://www.packtpub.com/product/practical-detection-engineering/9781801076715?utm_source=github&utm_medium=repository&utm_campaign=9781801076715"><img src="https://content.packt.com/B17299/cover_image_small.jpg" alt="" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/product/practical-detection-engineering/9781801076715?utm_source=github&utm_medium=repository&utm_campaign=9781801076715"><img src="https://content.packt.com/B17299/cover_image_small.jpg?" alt="" height="256px" align="right"></a>
 
 This is the code repository for [Practical Threat Detection Engineering](https://www.packtpub.com/product/practical-detection-engineering/9781801076715?utm_source=github&utm_medium=repository&utm_campaign=9781801076715), published by Packt.
 
