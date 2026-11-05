@@ -49,6 +49,8 @@ With the following software and hardware list you can run all code files present
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it]( https://packt.link/qt1nr).
 
+### Errata
+* (Page 11, 1st paragraph, second line): "Protocol attacks focus on the network and transport layer and attempt to deplete the available resources of the networking devices, making the target service **available**." _should be_ "Protocol attacks focus on the network and transport layer and attempt to deplete the available resources of the networking devices, making the target service **unavailable**."
 ### Related products
 * Incident Response Techniques for Ransomware Attacks [[Packt]](https://www.packtpub.com/product/incident-response-techniques-for-ransomware-attacks/9781803240442?utm_source=github&utm_medium=repository&utm_campaign=9781803240442) [[Amazon]](https://www.amazon.com/dp/180324044X)
 
